@@ -684,7 +684,11 @@ hr {
   }
 
   .payment-form {
-    width: 50%;
+    width: 60%;
+  }
+
+  .payment-form input {
+    width: 100%;
   }
 
   .payment-form #cvv-expiry #expiry-date {
