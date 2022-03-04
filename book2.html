@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriOS Auto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fb6de55121.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <header class="header">
+                <img src="images/logo.png" alt="TriOS Logo">
+                <a class="link-title" href="index.html">TriOS Auto</a>
+            </header>
+
+            <nav class="menu">
+                <a class="nav-button" id="home-button" href="index.html">Home</a>
+                <a class="nav-button" id="rent-button" href="rent.html">Rent</a>
+                <a class="nav-button" id="about-button" href="about.html">About</a>
+                <a class="nav-button" id="contact-button" href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="previous-page-button">
+                <a href="rent.html" class="page-arrows" title="previous-page"><em class='fas fa-arrow-left'></em></a>
+                <p class="page-button-name">Rent</p>
+            </div>
+
+            <div class="next-page-button">
+            </div>
+
+            <div id="book1-page" class="content book-page">
+                <div class="booking-left">
+                    <div class="car-details">
+                        <div class="car-image">
+                            <img src="images/rent2.jpeg" alt="An image of the rental car.">
+                        </div>
+                        <div class="book-info">
+
+                            <h3>Mustang 2020</h3>
+                            <ul>
+                                <li>Body Type: Sedane</li>
+                                <li>Transmission: Automatic</li>
+                                <li>Drivetrain: RWD</li>
+                                <li>Stock Status: <span class="available">Available</span></li>
+                            </ul>
+                            <h3>150 C$ per day</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-form">
+                    <h3>Pickup Information</h3>
+                    <form action="payment.html" target="_blank">
+                        <p>
+                            <label for="start-date">Start Date:</label>
+                            <input type="date" id="start-date" name="start-date" required>
+
+                            <label for="start-time">Start Time:</label>
+                            <input type="time" id="start-time" name="start-time" required>
+                        </p>
+                        <p>
+                            <label for="end-date">End Date:</label>
+                            <input type="date" id="end-date" name="end-date" required>
+                            <label for="end-time">End Time:</label>
+                            <input type="time" id="end-time" name="end-time" required>
+                        </p>
+
+                        <input type="radio" id="bring-car" name="car-delivery" value="bring-car" required>
+                        <label for="bring-car">Bring to my address (use address from the payment
+                            information)</label><br>
+                        <input type="radio" id="pickup-car" name="car-delivery" value="pickup-car" required>
+                        <label for="pickup-car">Pick up from the store</label>
+                        <h3>Payment Information</h3>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" name="name" required>
+                        </p>
+
+                        <p>
+                            <label for="address">Address:</label>
+                            <input id="address" type="text" name="address" required>
+                        </p>
+
+                        <p>
+                            <label for="cc-number">Credit Card Number:</label>
+                            <input type="number" id="cc-number" name="cc-number"
+                                onKeyPress="if(this.value.length==16) return false;" required>
+                        </p>
+
+                        <p id="cvv-expiry">
+                            <label for="cvv">CVV:</label>
+                            <input type="number" id="cvv" name="cvv" onKeyPress="if(this.value.length==3) return false;"
+                                required>
+                            <label for="expiry-date">Expiry Date (month and year):</label>
+                            <input type="month" id="expiry-date" name="expiry-date" required>
+                        </p>
+
+                        <p id="checkbox">
+                            <input type="checkbox" id="check" name="check" required>
+                            <label for="check">I acknowledge that I have read and understood all the policies and
+                                procedures in its entirety and agree to abide by them.</label>
+                        </p>
+
+                        <p>
+                            <input type="submit" name="submit" id="submit" value="Confirm Payment">
+                        </p>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="copyright-message"><img src="images/logo.png" alt="TriOS Logo"> &copy; TriOS Corporate CA, Inc.
+                All rights reserved.</div>
+            <p class="footer-credit">Website designed by Berkay Colak & Mert Guler - 2022</p>
+        </footer>
+    </div>
+</body>
+
+</html>

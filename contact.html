@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriOS Auto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fb6de55121.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <header class="header">
+                <img src="images/logo.png" alt="TriOS Logo">
+                <a class="link-title" href="index.html">TriOS Auto</a>
+            </header>
+
+            <nav class="menu">
+                <a class="nav-button" id="home-button" href="index.html">Home</a>
+                <a class="nav-button" id="rent-button" href="rent.html">Rent</a>
+                <a class="nav-button" id="about-button" href="about.html">About</a>
+                <a class="nav-button" id="contact-button" href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="previous-page-button">
+                <a href="about.html" class="page-arrows" title="previous-page"><em class='fas fa-arrow-left'></em></a>
+                <p class="page-button-name">About Us</p>
+            </div>
+
+            <div id="contact-page" class="content">
+                <div id="form">
+                    <form action="mailto:mert.guler@triosstudent.com?cc=berkay.colak@triosstudent.com&subject=" method="POST" enctype="text/plain">
+                        <p>
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                        </p>
+
+                        <p>
+                            <label for="email">E-mail:</label>
+                            <input id="email" type="email" name="email" placeholder="Enter 'your' e-mail address" required>
+                        </p>
+
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                placeholder="Write your message in this area." required></textarea>
+                        </p>
+
+                        <p>
+                            <input type="submit" name="submit" id="submit" value="Submit your message!">
+                        </p>
+                    </form>
+                </div>
+
+                <iframe id="youtube-video" width="640" height="360" src="https://www.youtube.com/embed/dcsXdT5oahg"
+                    title="YouTube video player" style="border: none;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" target="_blank"><img class="social-media-icons" src="images/facebook.png" alt="Facebook icon"></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><img class="social-media-icons" src="images/twitter.png" alt="Twitter icon"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img class="social-media-icons" src="images/youtube.png" alt="Youtube icon"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="social-media-icons" src="images/instagram.png" alt="Instagram icon"></a>
+                    <a href="https://www.whatsapp.com/" target="_blank"><img class="social-media-icons" src="images/Whatsapp.png" alt="Whatsapp icon"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img class="social-media-icons" src="images/linkedin.png" alt="Linkedin icon"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="copyright-message"><img src="images/logo.png" alt="TriOS Logo"> &copy; TriOS Corporate CA, Inc.
+                All rights reserved.</div>
+            <p class="footer-credit">Website designed by Berkay Colak & Mert Guler - 2022</p>
+        </footer>
+    </div>
+</body>
+
+</html>
