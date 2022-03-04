@@ -73,7 +73,10 @@ img {
   height: 80px;
   float: right;
   margin-right: 100px;
-  display: flex;
+  display: grid;
+  grid-template-areas: 'home rent about contact';
+  grid-template-columns: auto auto auto auto;
+  gap: 0;
 }
 
 .nav-button {
@@ -186,7 +189,7 @@ img {
 
 .main h1 {
   font-family: Marvel;
-  font-size: 3.5vw;
+  font-size: 70px;
   text-align: right;
   color: #eeeeee;
   margin: 0;
@@ -194,7 +197,7 @@ img {
 
 .main h2 {
   font-family: Marvel;
-  font-size: 1.5vw;
+  font-size: 28px;
   text-align: right;
   color: #eeeeee;
   margin: 0;
@@ -285,6 +288,7 @@ img {
 
 #about-page .table-image {
   width: 300px;
+  padding: 0 20px;
 }
 
 #about-page #mert-info td {
@@ -299,6 +303,43 @@ hr {
   display: none;
 }
 
+.biography {
+  grid-area: biography;
+}
+
+.history-description {
+  column-count: 2;
+  grid-area: history;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.company-history h3 {
+  text-align: center;
+}
+
+.certificates {
+  grid-area: certificates;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.certificates ul {
+  padding: 0px;
+  font-size: 20px;
+}
+
+.certificates ul li {
+  margin: 10px 0;
+}
+
+
+#about-page {
+  display: grid;
+  grid-template-areas:
+    'biography history'
+    'biography certificates';
+}
 
 
 /************************ CONTACT PAGE STYLES ********************/
@@ -655,25 +696,74 @@ hr {
     width: 100%;
   }
 
+  .vertical tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  hr {
+    display: block;
+    width: 90%;
+    color: #eeeeee;
+  }
+  
+
+  /* **************   about page mobile   ******************** */
+
+  .biography {
+    grid-area: biography;
+  }
+  
+  .history-description {
+    column-count: 2;
+    grid-area: history;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .company-history h3 {
+    text-align: center;
+  }
+  
+  .certificates {
+    grid-area: certificates;
+    text-align: center;
+    list-style-position: inside;
+  }
+  
+  .certificates ul {
+    padding: 0px;
+    font-size: 20px;
+  }
+  
+  .certificates ul li {
+    margin: 10px 0;
+  }
+  
+  
+  #about-page {
+    display: grid;
+    grid-template-areas:
+      'biography'
+      'history'
+      'certificates';
+  }
+  
+  .motto {
+    width: 100%;
+  }
+
+  .main h1 {
+    font-size: 50px;
+  }
+  
+  .main h2 {
+    font-size: 20px;
+  }
+
+
 
 }
-
-
-/* deneme */
-
-.vertical tr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-}
-
-
-
-hr {
-  display: block;
-  width: 90%;
-  color: #eeeeee;
-}
-
 
