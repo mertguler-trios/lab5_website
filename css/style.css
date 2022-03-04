@@ -774,7 +774,7 @@ hr {
     font-size: 20px;
   }
 
-/********************* payment confirmation page on mobile ****************/
+  /********************* payment confirmation page on mobile ****************/
 
   #payment-body .menu {
     background-color: #222831;
@@ -785,7 +785,7 @@ hr {
   }
 
   #payment-body .main {
-    height: calc( 100vh - 50px);
+    height: calc(100vh - 50px);
   }
 
   #payment-body p {
@@ -799,5 +799,4 @@ hr {
   #payment-page h2 {
     font-size: 36px;
   }
-
 }
