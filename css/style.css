@@ -600,13 +600,6 @@ hr {
 
   .content {
     min-height: calc(100vh - 190px);
-<<<<<<< HEAD
-=======
-  }
-
-  .main {
-    height: calc(100vh - 190px);
->>>>>>> a5b1773f048e010d0607d66db88dd9640f578b7c
   }
   
   #rent-page {
@@ -635,12 +628,11 @@ hr {
     flex-direction: column;
   }
 
-<<<<<<< HEAD
   .main{
     height: calc(100vh - 190px);
   }
-}
-=======
+
+
   .book-page {
       flex-direction: column;
       margin: 20px 0;
@@ -664,8 +656,7 @@ hr {
   }
 
 
-
-
+}
 
 
 /* deneme */
@@ -686,12 +677,3 @@ hr {
 }
 
 
-
-  }
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> a5b1773f048e010d0607d66db88dd9640f578b7c
->>>>>>> abbdc82c8911fca3ec1872f763cd0599e19924b2
