@@ -312,6 +312,7 @@ img {
   height: 50px;
   background-color: #eeeeee;
   margin-top: 10px;
+  border: none;
 }
 
 #contact-page #form label {
@@ -334,6 +335,7 @@ img {
   font-family: Mulish;
   font-size: 24px;
   color: #eeeeee;
+  border: none;
 }
 
 #contact-page #form #submit:hover {
@@ -591,7 +593,11 @@ img {
   }
 
   .content {
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 190px);
+  }
+
+  .main {
+    height: calc(100vh - 190px);
   }
   
   #rent-page {
@@ -619,4 +625,33 @@ img {
     display: flex;
     flex-direction: column;
   }
-}
+
+  .book-page {
+      flex-direction: column;
+      margin: 20px 0;
+  }
+
+  .payment-form {
+    width: 50%;
+  }
+
+  .payment-form #cvv-expiry #expiry-date {
+    width: 100%;
+  }
+  
+  .payment-form #cvv-expiry {
+    flex-direction: column;
+    align-items: normal;
+  }
+  
+  .payment-form #cvv-expiry input {
+    width: 100%;
+  }
+
+
+
+
+  }
+
+
+
