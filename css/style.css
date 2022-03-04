@@ -25,6 +25,10 @@ body {
   min-height: -webkit-fill-available;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 a {
   text-decoration: none;
 }
