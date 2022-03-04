@@ -604,9 +604,12 @@ hr {
   color: #222831;
 }
 
-/********************** RESPONSIVE PAGE STYLES  *****************/
+/********************** RESPONSIVE PAGE STYLES - MEDIA QUERIES *****************/
 
 @media only screen and (max-width: 1000px) {
+
+  /**************** navigation bar on mobile *************/
+
   .top-bar {
     flex-direction: column;
   }
@@ -628,9 +631,17 @@ hr {
     background-color: #00adb5;
   }
 
+  .top-bar {
+    height: 140px;
+  }
+
+  /**************** footer bar on mobile *************/
+
   .footer {
     font-size: 8px;
   }
+
+  /**************** navigation arrows on mobile *************/
 
   .next-page-button {
     display: none;
@@ -642,13 +653,14 @@ hr {
     width: 0;
   }
 
-  .top-bar {
-    height: 140px;
-  }
+
+  /**************** main content on mobile *************/
 
   .content {
     min-height: calc(100vh - 190px);
   }
+
+  /**************** rent page on mobile *************/
 
   #rent-page {
     flex-direction: column;
@@ -657,6 +669,8 @@ hr {
   #rent-page .car-listing {
     margin: 30px 0;
   }
+
+  /**************** home page on mobile *************/
 
   .motto {
     display: flex;
@@ -675,9 +689,23 @@ hr {
     flex-direction: column;
   }
 
+  .motto {
+    width: 100%;
+  }
+
+  .main h1 {
+    font-size: 50px;
+  }
+
+  .main h2 {
+    font-size: 20px;
+  }
+
   .main {
     height: calc(100vh - 190px);
   }
+
+  /**********************   booking page mobile   ********************/
 
   .book-page {
     flex-direction: column;
@@ -705,20 +733,15 @@ hr {
     width: 100%;
   }
 
+
+  /**********************   about page mobile   ********************/
+
   .vertical tr {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px 10px;
   }
-
-  hr {
-    display: block;
-    width: 90%;
-    color: #eeeeee;
-  }
-
-  /**********************   about page mobile   ********************/
 
   .biography {
     grid-area: biography;
@@ -767,16 +790,10 @@ hr {
     max-width: 375px;
   }
 
-  .motto {
-    width: 100%;
-  }
-
-  .main h1 {
-    font-size: 50px;
-  }
-
-  .main h2 {
-    font-size: 20px;
+  hr {
+    display: block;
+    width: 90%;
+    color: #eeeeee;
   }
 
   /********************* payment confirmation page on mobile ****************/
@@ -805,7 +822,7 @@ hr {
     font-size: 36px;
   }
 
-  /************** contact page on mobile  *************/
+  /********************** contact page on mobile  ***********************/
 
   #contact-page {
     flex-direction: column;
