@@ -13,7 +13,6 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-
 /************************** GENERAL *****************************/
 
 body {
@@ -81,7 +80,7 @@ img {
   float: right;
   margin-right: 100px;
   display: grid;
-  grid-template-areas: 'home rent about contact';
+  grid-template-areas: "home rent about contact";
   grid-template-columns: auto auto auto auto;
   gap: 0;
 }
@@ -223,9 +222,9 @@ img {
 
 .car-listing {
   border: 1px solid black;
-  width: 450px;
+  width: 80%;
   height: 650px;
-  margin: 0 auto;
+  margin: 0 20px;
   border-radius: 40px 120px;
   background-color: #eeeeee;
   display: flex;
@@ -236,8 +235,8 @@ img {
 }
 
 .car-listing img {
-  width: 340px;
-  height: 340px;
+  width: 80%;
+  height: 50%;
   border: 3px solid #222831;
   padding: 0;
   margin: 65px auto 40px auto;
@@ -246,10 +245,11 @@ img {
 
 .car-listing p {
   margin: 5px;
+  text-align: center;
 }
 
 .car-listing a {
-  width: 180px;
+  width: 60%;
   height: 50px;
   border-radius: 25px;
   background-color: #00adb5;
@@ -272,6 +272,10 @@ img {
 
 .car-listing a:hover:before {
   content: "E-Pay";
+}
+
+#rent-page {
+  flex-wrap: nowrap;
 }
 
 /************************ ABOUT US PAGE STYLES ********************/
@@ -340,14 +344,12 @@ hr {
   margin: 10px 0;
 }
 
-
 #about-page {
   display: grid;
   grid-template-areas:
-    'biography history'
-    'biography certificates';
+    "biography history"
+    "biography certificates";
 }
-
 
 /************************ CONTACT PAGE STYLES ********************/
 
@@ -601,16 +603,13 @@ hr {
   color: #222831;
 }
 
-
-
 /********************** RESPONSIVE PAGE STYLES  *****************/
 
-
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width: 1000px) {
   .top-bar {
-    flex-direction: column  ;
+    flex-direction: column;
   }
-  
+
   .header {
     margin: 0;
     display: flex;
@@ -649,7 +648,7 @@ hr {
   .content {
     min-height: calc(100vh - 190px);
   }
-  
+
   #rent-page {
     flex-direction: column;
   }
@@ -665,25 +664,23 @@ hr {
     align-items: center;
     margin: 0 auto;
   }
-  
-  .home-page-image {
-    width: 80% ;
-  }
 
+  .home-page-image {
+    width: 80%;
+  }
 
   #home-page {
     display: flex;
     flex-direction: column;
   }
 
-  .main{
+  .main {
     height: calc(100vh - 190px);
   }
 
-
   .book-page {
-      flex-direction: column;
-      margin: 20px 0;
+    flex-direction: column;
+    margin: 20px 0;
   }
 
   .payment-form {
@@ -693,12 +690,12 @@ hr {
   .payment-form #cvv-expiry #expiry-date {
     width: 100%;
   }
-  
+
   .payment-form #cvv-expiry {
     flex-direction: column;
     align-items: normal;
   }
-  
+
   .payment-form #cvv-expiry input {
     width: 100%;
   }
@@ -709,27 +706,26 @@ hr {
     align-items: center;
     margin: 20px 10px;
   }
-  
+
   hr {
     display: block;
     width: 90%;
     color: #eeeeee;
   }
-  
 
-  /* **************   about page mobile   ******************** */
+  /**********************   about page mobile   ********************/
 
   .biography {
     grid-area: biography;
   }
-  
+
   .history-description {
     column-count: 2;
     grid-area: history;
     width: 70%;
     margin: 0 auto;
   }
-  
+
   .company-history {
     margin: 0 10px;
   }
@@ -737,32 +733,31 @@ hr {
   .company-history h3 {
     text-align: center;
   }
-  
+
   .certificates {
     grid-area: certificates;
     text-align: center;
     list-style-position: inside;
   }
-  
+
   .certificates ul {
     padding: 0px;
     font-size: 20px;
   }
-  
+
   .certificates ul li {
     margin: 10px 0;
   }
-  
-  
+
   #about-page {
     display: grid;
     grid-template-areas:
-      'biography'
-      'history'
-      'certificates';
+      "biography"
+      "history"
+      "certificates";
     max-width: 375px;
   }
-  
+
   #about-page table {
     max-width: 375px;
   }
@@ -774,12 +769,35 @@ hr {
   .main h1 {
     font-size: 50px;
   }
-  
+
   .main h2 {
     font-size: 20px;
   }
 
+/********************* payment confirmation page on mobile ****************/
 
+  #payment-body .menu {
+    background-color: #222831;
+  }
+
+  #payment-body .top-bar {
+    height: 0;
+  }
+
+  #payment-body .main {
+    height: calc( 100vh - 50px);
+  }
+
+  #payment-body p {
+    text-align: center;
+  }
+
+  #payment-page {
+    margin-top: 50px;
+  }
+
+  #payment-page h2 {
+    font-size: 36px;
+  }
 
 }
-
