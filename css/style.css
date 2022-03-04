@@ -411,6 +411,7 @@ hr {
   margin: 10px auto;
   background-color: #eeeeee;
   border-radius: 50%;
+  min-width: 100%;
 }
 
 .social-media-icons:hover {
@@ -802,5 +803,28 @@ hr {
 
   #payment-page h2 {
     font-size: 36px;
+  }
+
+  /************** contact page on mobile  *************/
+
+  #contact-page {
+    flex-direction: column;
+  }
+
+  #contact-page #form {
+    width: 80%;
+  }
+
+  #contact-page iframe {
+    width: 80%;
+  }
+
+  #contact-page .social-media {
+    flex-direction: row;
+    margin: 20px auto;
+  }
+
+  #contact-page .social-media-icons {
+    width: 40px;
   }
 }
