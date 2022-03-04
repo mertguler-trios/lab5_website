@@ -700,7 +700,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 20px 10px;
   }
   
   hr {
@@ -753,8 +753,13 @@ hr {
       'biography'
       'history'
       'certificates';
+    max-width: 375px;
   }
   
+  #about-page table {
+    max-width: 375px;
+  }
+
   .motto {
     width: 100%;
   }
