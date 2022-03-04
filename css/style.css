@@ -283,7 +283,7 @@ img {
   font-size: 20px;
 }
 
-#about-page .table-image td {
+#about-page .table-image {
   width: 300px;
 }
 
@@ -294,6 +294,12 @@ img {
 #about-page #berkay-info td {
   padding-right: 80px;
 }
+
+hr {
+  display: none;
+}
+
+
 
 /************************ CONTACT PAGE STYLES ********************/
 
@@ -651,7 +657,26 @@ img {
 
 
 
+
+
+/* deneme */
+
+.vertical tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+
+
+hr {
+  display: block;
+  width: 90%;
+  color: #eeeeee;
+}
+
+
+
   }
-
-
 
