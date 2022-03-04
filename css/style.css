@@ -81,7 +81,7 @@ img {
 
 .nav-button {
   background-color: #00adb5;
-  padding: 25px 25px;
+  padding: 25px 20px;
   text-align: center;
   font-family: Mulish;
   color: #eeeeee;
@@ -171,7 +171,7 @@ img {
 }
 
 .footer-credit {
-  margin-right: 50px;
+  padding-right: 20px;
 }
 
 .copyright-message {
