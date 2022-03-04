@@ -591,7 +591,7 @@ img {
   }
 
   .content {
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 190px);
   }
   
   #rent-page {
@@ -618,5 +618,9 @@ img {
   #home-page {
     display: flex;
     flex-direction: column;
+  }
+
+  .main{
+    height: calc(100vh - 190px);
   }
 }
